@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Harish Trading Academy | Free Learning Channel</title>
+<meta name="description" content="Learn stock market basics in Kannada & English with Harish Trading Academy. Educational content only.">
+<meta name="theme-color" content="#170d0a">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1674156970791468');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1674156970791468&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  /* Layout: glass phone mockup over Karnataka yellow-red glow; full-screen app on mobile */
+  :root{
+    color-scheme:dark;
+    --bg:#170d0a; --glass:rgba(255,255,255,.08); --glass2:rgba(255,255,255,.13); --edge:rgba(255,255,255,.18);
+    --text:#fbf5ef; --muted:#cdbfb3; --soft:#eadfd5;
+    --pink:#ef4444; --violet:#f59e0b; --cyan:#fb923c; --green:#34d399; --red:#fb7185; --gold:#fcd34d;
+    --cta:#2aa7e1; --cta2:#1d8fc4;
+    --te:"Noto Sans Kannada","Tunga",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    --en:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{min-height:100%}
+  body{font-family:var(--te);background:var(--bg);color:var(--text);line-height:1.55;-webkit-font-smoothing:antialiased;
+       display:flex;justify-content:center;align-items:flex-start;padding:28px 16px;position:relative;overflow-x:hidden}
+  /* colour glow blobs behind the glass */
+  .blob{position:fixed;border-radius:50%;filter:blur(70px);opacity:.55;z-index:0;pointer-events:none}
+  .b1{width:320px;height:320px;background:var(--violet);top:-80px;left:-60px}
+  .b2{width:280px;height:280px;background:var(--pink);bottom:-60px;right:-40px}
+  .b3{width:220px;height:220px;background:var(--cyan);top:40%;left:55%;opacity:.35}
+  .en{display:block;color:var(--muted);font-size:.86em;font-family:var(--en)}
+
+  .glass{background:var(--glass);border:1px solid var(--edge);
+         -webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%)}
+
+  /* ===== PHONE FRAME ===== */
+  .phone{position:relative;z-index:1;width:100%;max-width:400px;border-radius:46px;padding:10px;
+         background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);
+         box-shadow:0 40px 90px rgba(0,0,0,.55),inset 0 0 0 1px rgba(255,255,255,.04)}
+  .island{position:absolute;top:19px;left:50%;transform:translateX(-50%);width:98px;height:26px;background:#05030b;border-radius:20px;z-index:5}
+  .screen{border-radius:37px;overflow:hidden;background:linear-gradient(160deg,rgba(245,158,11,.17),rgba(18,13,36,.6) 45%,rgba(239,68,68,.15))}
+
+  .status{display:flex;justify-content:space-between;padding:14px 26px 4px;font:700 13px/1 var(--en)}
+  .status span:last-child{letter-spacing:2px}
+  .head{display:flex;align-items:center;gap:10px;margin:8px 10px 0;padding:9px 12px;border-radius:18px}
+  .av{position:relative;overflow:hidden;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--pink),var(--violet));color:#fff;font:800 13px/1 var(--en)}
+  .av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .av.sm{width:38px;height:38px}
+  .head b{display:block;font:700 15px/1.2 var(--en)}
+  .head small{font-size:12px;color:var(--muted)}
+  .live{margin-left:auto;font:700 10px/1 var(--en);letter-spacing:.8px;color:var(--green);display:flex;align-items:center;gap:5px}
+  .live i{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}
+
+  .body{padding:14px 12px 16px;display:flex;flex-direction:column;gap:12px}
+
+  /* ===== MAIN GLASS CARD ===== */
+  .main{border-radius:26px;padding:22px 18px 18px;text-align:center}
+  .av.big{width:86px;height:86px;margin:0 auto 10px;font-size:24px;box-shadow:0 0 0 4px rgba(255,255,255,.12),0 10px 30px rgba(245,158,11,.45)}
+  .brand{font:800 16px/1.2 var(--en)}
+  .tag{display:inline-block;margin:10px 0 14px;font:700 11.5px/1 var(--te);letter-spacing:.4px;color:var(--gold);
+       background:rgba(252,211,77,.1);border:1px solid rgba(252,211,77,.3);padding:6px 11px;border-radius:999px}
+  h1{font-size:22px;line-height:1.4;text-wrap:balance}
+  h1 .en{font-size:15px;color:var(--soft);font-weight:700;margin-top:4px}
+  .sub{margin-top:8px;font-size:14px;color:var(--soft)}
+  .sub .en{font-size:13px;margin-top:2px}
+
+  .points{list-style:none;display:grid;gap:8px;margin-top:16px;text-align:left}
+  .points li{display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:14px;background:var(--glass2);border:1px solid rgba(255,255,255,.1);font-size:14px}
+  .points svg{flex:0 0 auto}
+  .points .en{font-size:12.5px}
+
+  .cta{display:flex;flex-direction:column;align-items:center;width:100%;margin-top:18px;border-radius:16px;padding:14px;
+       background:linear-gradient(135deg,var(--cta),#4f7df0);color:#fff;text-decoration:none;font-weight:800;font-size:18px;
+       box-shadow:0 10px 28px rgba(42,167,225,.45),inset 0 1px 0 rgba(255,255,255,.35);animation:pulse 2s infinite;transition:transform .15s}
+  .cta:active{transform:scale(.97)} .cta:hover{background:linear-gradient(135deg,var(--cta2),#4470e0)}
+  .cta:focus-visible{outline:2px solid #fff;outline-offset:3px}
+  .cta .row{display:flex;align-items:center;gap:9px}
+  .cta small{font:700 12px/1.3 var(--en);letter-spacing:.6px;opacity:.92}
+  @keyframes pulse{0%,100%{box-shadow:0 10px 28px rgba(42,167,225,.35),inset 0 1px 0 rgba(255,255,255,.35)}50%{box-shadow:0 10px 40px rgba(42,167,225,.8),inset 0 1px 0 rgba(255,255,255,.35)}}
+
+  .timer{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;font-size:13px;color:var(--soft);text-align:left}
+  .ring{width:44px;height:44px;position:relative;flex:0 0 auto}
+  .ring svg{transform:rotate(-90deg)}
+  .ring .bg{stroke:rgba(255,255,255,.15)}
+  .ring .fg{stroke:var(--gold);stroke-linecap:round;transition:stroke-dashoffset 1s linear}
+  .ring b{position:absolute;inset:0;display:grid;place-items:center;font:800 16px/1 var(--en);color:var(--gold)}
+  .free{margin-top:8px;font:12px/1.4 var(--te);color:var(--muted)}
+
+  /* ===== LESSON BUBBLE (mockup feel) ===== */
+  .bubble{align-self:flex-start;max-width:90%;border-radius:18px 18px 18px 6px;padding:11px 12px 7px;font-size:13.5px}
+  .bubble b{display:block;font-size:13.5px;margin-bottom:2px}
+  .bubble .en{font-size:12.5px}
+  .chart{display:flex;align-items:flex-end;gap:4px;height:52px;margin:8px 0 4px;padding:6px;background:rgba(0,0,0,.18);border-radius:10px}
+  .chart i{flex:1;border-radius:2px;background:var(--green)} .chart i.r{background:var(--red)}
+  .time{display:block;text-align:right;font:11px/1 var(--en);color:var(--muted);margin-top:4px}
+
+  /* ===== DISCLAIMER ===== */
+  .disc{border-radius:18px;padding:13px 14px;font-size:11.5px;color:var(--soft);line-height:1.7;border-color:rgba(252,211,77,.28);background:rgba(252,211,77,.06)}
+  .disc b{color:var(--gold)} .disc p+p{margin-top:6px}
+  .foot{text-align:center;font:11px/1.6 var(--en);color:var(--muted);padding:2px 6px 4px}
+  .foot a{color:var(--muted)}
+
+  /* Mobile: frame hata ke full-screen glass app */
+  @media(max-width:480px){
+    body{padding:0}
+    .phone{max-width:none;border-radius:0;padding:0;border:0;box-shadow:none;background:none}
+    .island,.status{display:none}
+    .screen{border-radius:0;min-height:100vh;background:transparent}
+    .head{margin:calc(10px + env(safe-area-inset-top)) 10px 0}
+    .body{padding-bottom:calc(16px + env(safe-area-inset-bottom))}
+  }
+  @media(prefers-reduced-motion:reduce){.cta{animation:none}.ring .fg{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+
+<div class="phone">
+  <div class="island"></div>
+  <div class="screen">
+    <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+
+    <div class="head glass">
+      <div class="av sm"><img src="https://github.com/gt260856-netizen/harish/releases/download/h/WhatsApp.Image.2026-07-10.at.11.32.58.AM.jpeg" alt="Harish Trading Academy" width="38" height="38" onerror="this.remove()">HTA</div>
+      <div><b>Harish Trading Academy</b><small>ಕನ್ನಡದಲ್ಲಿ ಉಚಿತ ಕಲಿಕೆ • free channel</small></div>
+      <span class="live"><i></i>LIVE</span>
+    </div>
+
+    <div class="body">
+
+      <main class="main glass">
+        <div class="av big"><img src="harish.jpg" alt="Harish Trading Academy" width="86" height="86" fetchpriority="high" onerror="this.remove()">HTA</div>
+        <div class="brand">Harish Trading Academy</div>
+        <span class="tag">ಉಚಿತ ಕಲಿಕೆ • FREE LEARNING</span>
+
+        <h1>ಸ್ಟಾಕ್ ಮಾರ್ಕೆಟ್ ಅನ್ನು ಸರಳವಾಗಿ ಕಲಿಯಿರಿ
+          <span class="en">Learn the Stock Market, the Simple Way</span></h1>
+        <p class="sub">ಮೂಲಭೂತದಿಂದ ಹಂತ ಹಂತವಾಗಿ, ಕನ್ನಡದಲ್ಲಿ.
+          <span class="en">Step by step from the basics, in Kannada.</span></p>
+
+        <ul class="points">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+            <div>ಚಾರ್ಟ್ ಓದುವ ಮೂಲಗಳು<span class="en">Chart reading basics</span></div></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>
+            <div>ರಿಸ್ಕ್ ಮ್ಯಾನೇಜ್‌ಮೆಂಟ್ & ಸ್ಟಾಪ್-ಲಾಸ್<span class="en">Risk management & stop-loss</span></div></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 10h.01M15 10h.01M8.5 15c1 1.2 2.2 1.8 3.5 1.8s2.5-.6 3.5-1.8"/></svg>
+            <div>ಟ್ರೇಡಿಂಗ್ ಸೈಕಾಲಜಿ & ಶಿಸ್ತು<span class="en">Trading psychology & discipline</span></div></li>
+        </ul>
+
+        <a href="#" class="cta js-cta">
+          <span class="row">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.06-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+            ಉಚಿತವಾಗಿ ಸೇರಿ
+          </span>
+          <small>JOIN FREE TELEGRAM CHANNEL</small>
+        </a>
+
+        <div class="timer js-timer-line">
+          <div class="ring">
+            <svg width="44" height="44" viewBox="0 0 44 44">
+              <circle class="bg" cx="22" cy="22" r="19" fill="none" stroke-width="4"/>
+              <circle class="fg js-ring" cx="22" cy="22" r="19" fill="none" stroke-width="4" stroke-dasharray="119.4" stroke-dashoffset="0"/>
+            </svg>
+            <b class="js-timer">8</b>
+          </div>
+          <div>ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಚಾನೆಲ್ ತೆರೆಯುತ್ತದೆ<span class="en">Channel opens automatically</span></div>
+        </div>
+        <p class="free">100% ಉಚಿತ • No payment • Leave anytime</p>
+      </main>
+
+      <div class="bubble glass">
+        <b>📊 ಇಂದಿನ ಪಾಠ • Today's Lesson</b>
+        ಸಪೋರ್ಟ್ & ರೆಸಿಸ್ಟೆನ್ಸ್ ಗುರುತಿಸುವುದು ಹೇಗೆ?<span class="en">How to spot support & resistance</span>
+        <div class="chart"><i style="height:35%"></i><i class="r" style="height:27%"></i><i style="height:46%"></i><i style="height:42%"></i><i class="r" style="height:34%"></i><i style="height:57%"></i><i style="height:68%"></i><i class="r" style="height:60%"></i><i style="height:80%"></i><i style="height:94%"></i></div>
+        <span class="time">9:15 AM</span>
+      </div>
+
+      <div class="disc glass">
+        <p><b>ಹಕ್ಕು ನಿರಾಕರಣೆ:</b> ಎಲ್ಲಾ ವಿಷಯಗಳು ಶೈಕ್ಷಣಿಕ ಉದ್ದೇಶಕ್ಕಾಗಿ ಮಾತ್ರ. ಇದು ಹೂಡಿಕೆ ಸಲಹೆ ಅಥವಾ ಖರೀದಿ/ಮಾರಾಟ ಶಿಫಾರಸು ಅಲ್ಲ. ನಾವು SEBI ನೋಂದಾಯಿತ ಸಲಹೆಗಾರರಲ್ಲ. ಟ್ರೇಡಿಂಗ್‌ನಲ್ಲಿ ಹಣ ಕಳೆದುಕೊಳ್ಳುವ ಅಪಾಯವಿದೆ.</p>
+        <p><b>Disclaimer:</b> All content is for educational purposes only and is not investment advice or a buy/sell recommendation. We are not SEBI-registered advisors. Trading involves risk, including loss of capital. Past performance does not guarantee future results.</p>
+      </div>
+
+      <div class="foot">
+        © <span id="yr"></span> Harish Trading Academy • <a href="#">Privacy Policy</a> • <a href="#">Terms</a><br>
+        This site is not a part of the Facebook website or Meta Platforms, Inc.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  // ================= SETTINGS =================
+  var TG_LINK = "https://t.me/+4xPTZkFV3aRlOWVl";
+  var AUTO_REDIRECT = true;   // false = sirf button se Telegram khulega
+  var TIMER_SECONDS = 8;
+  var RETURN_DELAY_MS = 300;  // dobara aane wale ko kitni jaldi bhejna hai
+  // ============================================
+
+  var KEY_VISITED = "htk_visited", KEY_EVT = "htk_sub";
+  var loadTime = Date.now();
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  function setFlag(k){
+    try{localStorage.setItem(k,"1")}catch(e){}
+    document.cookie = k+"=1; max-age="+(60*60*24*180)+"; path=/; SameSite=Lax";
+  }
+  function hasFlag(k){
+    try{ if(localStorage.getItem(k)) return true }catch(e){}
+    return document.cookie.indexOf(k+"=1") !== -1;
+  }
+  function goTelegram(){ setFlag(KEY_VISITED); window.location.href = TG_LINK; }
+
+  // Human interaction check: touch / scroll / mouse / keyboard
+  var interacted = false;
+  function markHuman(e){ if (e && e.isTrusted === false) return; interacted = true; }
+  ["pointerdown","touchstart","mousemove","keydown","wheel"].forEach(function(ev){
+    window.addEventListener(ev, markHuman, {passive:true, capture:true});
+  });
+  window.addEventListener("scroll", markHuman, {passive:true});
+
+  // Subscribe: sirf asli click, sirf ek baar, bot filter
+  function fireEventOnce(e){
+    if (hasFlag(KEY_EVT)) return;              // pehle fire ho chuka
+    if (navigator.webdriver) return;           // automation / bot browser
+    if (Date.now() - loadTime < 800) return;   // bahut jaldi click
+    if (e && e.isTrusted === false) return;    // script se kiya gaya fake click
+    if (!interacted) return;                   // koi touch/scroll/mouse nahi hua
+    if (typeof fbq === "function") fbq("track","Subscribe",{},{eventID:"htk_sub_"+loadTime});
+    setFlag(KEY_EVT);
+  }
+
+  var cta = document.querySelector(".js-cta");
+  var timerLine = document.querySelector(".js-timer-line");
+  var timerEl = document.querySelector(".js-timer");
+  var ring = document.querySelector(".js-ring");
+  var C = 119.4, countdown;
+
+  cta.href = TG_LINK;
+  cta.addEventListener("click", function(e){
+    e.preventDefault();
+    if (countdown) clearInterval(countdown);
+    fireEventOnce(e);
+    setTimeout(goTelegram, 300);
+  });
+
+  // Returning visitor: timer skip, turant Telegram, event nahi
+  if (hasFlag(KEY_VISITED)) {
+    timerLine.innerHTML = "<div>ಚಾನೆಲ್ ತೆರೆಯುತ್ತಿದೆ…<span class='en'>Opening channel…</span></div>";
+    setTimeout(goTelegram, RETURN_DELAY_MS);
+    return;
+  }
+
+  if (!AUTO_REDIRECT) { timerLine.style.display = "none"; return; }
+  var left = TIMER_SECONDS;
+  function paint(){
+    timerEl.textContent = left;
+    ring.style.strokeDashoffset = (C * (1 - left / TIMER_SECONDS)).toFixed(1);
+  }
+  paint();
+  countdown = setInterval(function(){
+    left--; paint();
+    if (left <= 0){ clearInterval(countdown); goTelegram(); }
+  }, 1000);
+})();
+</script>
+</body>
+</html>
